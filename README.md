@@ -19,11 +19,13 @@ Personas: Security Engineers, Data Engineers
 
 ## Reference Architecture
 
-IMAGE TO REFERENCE ARCHITECTURE
+<img src="https://github.com/lipyeowlim/public/raw/main/img/ocsf/ocsf_ref_arch.png" width="600px">
+
+We recommend the use of the [medallion architecture](https://www.databricks.com/glossary/medallion-architecturer) where the raw security logs are ingested as bronze tables in their source schemas. The mappings in this solution accelerator are then applied to obtain the silver tables (or views) in OCSF. Further aggregation or detection processing can be applied to obtain gold tables. The above architecture shows the sample pipelines or data flows for the (zeek)[https://zeek.org/] data source, in particular, the http, dns, ftp logs.
 
 ## Technical Overview
 
-
+Coming soon.
 
 ___
 
