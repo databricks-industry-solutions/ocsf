@@ -1,17 +1,29 @@
-![image](https://user-images.githubusercontent.com/86326159/206014015-a70e3581-e15c-4a10-95ef-36fd5a560717.png)
+![image](https://github.com/lipyeowlim/public/raw/main/img/logo/databricks_cyber_logo_v1.png)
 
 [![CLOUD](https://img.shields.io/badge/CLOUD-ALL-blue?logo=googlecloud&style=for-the-badge)](https://cloud.google.com/databricks)
 [![POC](https://img.shields.io/badge/POC-10_days-green?style=for-the-badge)](https://databricks.com/try-databricks)
 
-*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.*
+# Schema Mappings for Open Cybersecurity Schema Framework
 
-___
-<john.doe@databricks.com>
+Contact author: <lipyeow.lim@databricks.com>
+Co-authors: Databricks cybersecurity SME members
 
-___
+This solution accelerator provides sample code for mapping various types of security logs to the Open Cybersecurity Schema Framework (OCSF) via structured streaming (schema-on-write), Delta Live Tables (schema-on-write), and/or views (schema-on-read). Note that the schema-on-read and schema-on-write approaches are not mutually exclusive: some tables can use schema-on-write and some tables can use schema-on-read.
 
+# Use Cases
+
+Personas: Security Engineers, Data Engineers
+
+* Schema-on-write: How do you transform security logs (in bronze tables) in their source schemas to the OCSF schema and write the results to silver tables?
+* Schema-on-read: How do you query security logs stored in their source schemas using queries written against OCSF?
+
+## Reference Architecture
 
 IMAGE TO REFERENCE ARCHITECTURE
+
+## Technical Overview
+
+
 
 ___
 
