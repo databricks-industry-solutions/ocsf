@@ -11,11 +11,7 @@
 
 # COMMAND ----------
 
-sql_list=[
-  f"DROP SCHEMA IF EXISTS {getParam('db')} CASCADE",
-  f"CREATE DATABASE IF NOT EXISTS {getParam('db')} LOCATION '{getParam('data_path')}'",
-  f"USE SCHEMA {getParam('db')}"
-]
+sql_list=[  f"USE SCHEMA {getParam('db')}" ]
 
 for s in sql_list:
   print(s)
@@ -71,10 +67,10 @@ for t in tables:
 
 # MAGIC %sql
 # MAGIC 
-# MAGIC select 'http' as table_name, count(*), min(eventDate), max(eventDate)
+# MAGIC select 'http' as table_name, count(*) as cnt, min(ts::timestamp), max(ts::timestamp)
 # MAGIC from http
 # MAGIC union all
-# MAGIC select 'dns' as table_name, count(*), min(eventDate), max(eventDate)
+# MAGIC select 'dns' as table_name, count(*) as cnt, min(ts::timestamp), max(ts::timestamp)
 # MAGIC from dns
 
 # COMMAND ----------

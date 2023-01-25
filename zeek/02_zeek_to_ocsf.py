@@ -75,6 +75,7 @@ spark.sql(sqlstr)
 # DBTITLE 1,Schema-on-read view for OCSF http_activity
 # MAGIC %sql
 # MAGIC 
+# MAGIC drop view if exists v_http_activity;
 # MAGIC create view if not exists v_http_activity
 # MAGIC as
 # MAGIC select 
